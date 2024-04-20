@@ -71,10 +71,10 @@ int main(int argc, char** argv)
         
         drawBorder(output);
         drawGallows(output, 3, 60);
-        char WORD[5] = {'W', 'O', 'R', 'D', '\0'};
-        char GUESSES[8] = { 'G', 'U', 'E', 'S', 'S', 'E', 'S', '\0' };
+        char WORD[4] = {'W', 'O', 'R', 'D'};
+        char GUESSES[7] = { 'G', 'U', 'E', 'S', 'S', 'E', 'S'};
         drawArray(output, WORD, 4 , 5 , 10);
-        drawArray(output, GUESSES, 8 , 5 ,30); 
+        drawArray(output, GUESSES, 7 , 5 ,34); 
         printOutput(output);
 
         if(wrongGuesses >= 6)
@@ -106,7 +106,7 @@ void printOutput(char output[50][100])
     {
         for(int j = 0; j < 100; j++)
         {
-            printf("%c", output[i][j]);
+                printf("%c", output[i][j]);
         }
         printf("\n");
     }
